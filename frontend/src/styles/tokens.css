@@ -1,0 +1,29 @@
+:root {
+  --lt-bg: #F7F8FA;
+  --lt-card: #FFFFFF;
+  --lt-text-1: #111318;
+  --lt-text-2: #60646C;
+  --lt-text-3: #9297A1;
+  --lt-border: #E8EAF0;
+  --lt-brand: #635BFF;
+  --lt-brand-hover: #5148EE;
+  --lt-brand-light: #EFEEFF;
+  --lt-success: #16A36A;
+  --lt-warning: #E99A14;
+  --lt-error: #E5484D;
+
+  --lt-radius-btn: 8px;
+  --lt-radius-input: 10px;
+  --lt-radius-card: 14px;
+  --lt-radius-event: 16px;
+  --lt-radius-hero: 24px;
+  --lt-radius-modal: 16px;
+
+  --lt-shadow-card: 0 2px 10px rgba(17, 19, 24, 0.05);
+  --lt-shadow-hover: 0 12px 30px rgba(17, 19, 24, 0.10);
+
+  --lt-gradient-brand: linear-gradient(135deg, #635BFF 0%, #8B5CF6 52%, #C45CFF 100%);
+
+  --lt-content-width: 1200px;
+  --lt-header-height: 72px;
+}
