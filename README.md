@@ -75,7 +75,7 @@ sequenceDiagram
     M->>C: deliver (Manual Ack)
     C->>R: SETNX lt:mq:consume:{messageId} 幂等检查
     C->>C: Redisson tryLock
-    C->>D: BEGIN; stock-1(乐观); INSERT order; COMMIT
+    C->>D: BEGIN → stock-1 乐观扣减 → INSERT order → COMMIT
     C->>R: SET result SUCCESS:{orderNo}
     C-->>M: basicAck
     Note over C,M: 失败重试 3 次 → DLX/DLQ<br/>DLQ 消费者补偿 Redis 库存 + 抢票资格
